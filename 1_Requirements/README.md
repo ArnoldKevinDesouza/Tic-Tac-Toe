@@ -38,7 +38,7 @@ It can help to improve a person's concentration as well as strategic thinking
     * Hospital Management Application
     * Analytics System
     * Emergency Services
-![Description](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/system.png)
+![Description](https://drive.google.com/file/d/1RTfs6_wjkkUVVLKXlsdpi0rP_MdIHrUl/view?usp=sharing)
 ### Explanation:
 * Patient Management Application have few inbuilt features like:
     * Create a patient record
