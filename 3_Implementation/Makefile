@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = TIC-TAC-TOE
 
 # Output directory
 BUILD = build
@@ -8,9 +8,7 @@ BUILD = build
 SRC = project_main.c
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
-unity/unity.c\
+TEST_SRC = unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
