@@ -49,7 +49,7 @@ It can help to improve a person's concentration as well as strategic thinking
 * If not, then it again checks if it is a draw situation.
 
 ## SWOT ANALYSIS
-![SWOT Analysis](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/swot.png)
+![SWOT Analysis](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/media/swot.png?raw=true)
 
 # 4W&#39;s and 1&#39;H
 
