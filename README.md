@@ -1,5 +1,5 @@
 # SDLC Activity Based Learning
-![Banner](https://img.favpng.com/19/20/3/tic-tac-toe-game-oxo-artificial-intelligence-dots-and-boxes-png-favpng-9ittwQn93q2T9qA5gkQUhUiTm_t.jpg)
+![Banner](https://freepikpsd.com/wp-content/uploads/2019/11/Tictactoe_Game_Ticktacktoe_93183-Transparent-Png-Images.png)
 
 Visit [Pages for Report -optional](using github.io option)
 
