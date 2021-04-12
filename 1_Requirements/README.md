@@ -33,22 +33,21 @@ It can help to improve a person's concentration as well as strategic thinking
 | 2     |       | 44 Kb |
 
 ## Defining Our System
-### Certain assumptions:
-* Few systems already exists with which our system will interact
-    * Hospital Management Application
-    * Analytics System
-    * Emergency Services
+
 ![Description](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/media/flow.png?raw=true)
 ### Explanation:
-* Patient Management Application have few inbuilt features like:
-    * Create a patient record
-    * Delete a patient record
-    * Read a patient record
-    * Update a patient record
-    * Save record to file
-    * Read record from file 
+* The game starts giving you three input options(1, 2, 3):
+    * 1 means you play using 'X'.
+    * 2 means you play using 'O'.
+    * 3 means you exit the game.
+* The game ends when:
+    *It is a draw situation.
+    *You win.
+    *The computer wins.
+*The game continues in the beginning if the check for draw is false.
+*Then it checks if anyone has won yet.
+*If not, then it again checks if anyone has won.
 
-* Since we have assumed that few systems already exists we can say that in future sprints new features could be added in which for instance patient record from PMS can be sent to HMS or Analytics or even to emegency services if some patient record shows abnormal pattern.
 
 ## SWOT ANALYSIS
 ![SWOT Analysis](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/swot.png)
