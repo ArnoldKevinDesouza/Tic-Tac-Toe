@@ -41,13 +41,12 @@ It can help to improve a person's concentration as well as strategic thinking
     * 2 means you play using 'O'.
     * 3 means you exit the game.
 * The game ends when:
-    *It is a draw situation.
-    *You win.
-    *The computer wins.
-*The game continues in the beginning if the check for draw is false.
-*Then it checks if anyone has won yet.
-*If not, then it again checks if anyone has won.
-
+    * It is in a draw situation , i.e, a total of 9 moves have been completed and novody has won.
+    * You win.
+    * The computer wins.
+* The game continues in the beginning if the check for draw is false.
+* Then it checks if anyone has won yet.
+* If not, then it again checks if it is a draw situation.
 
 ## SWOT ANALYSIS
 ![SWOT Analysis](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/swot.png)
