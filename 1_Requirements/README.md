@@ -54,19 +54,23 @@ It can help to improve a person's concentration as well as strategic thinking
 # 4W&#39;s and 1&#39;H
 
 ## Who:
-* Small and medium size clinics Providing Covid vaccinations to patients
+* Anyone can play this game. 
+* Also, businesses can use it.
 
 ## What:
-* Many Clinics are not able to afford high end HMS or ERP systems and hence still depend on manual filing systems. During COVID vaccinations it becomes a tedious task to manage every patient with hand written file system
+* This game is for recreational purposes. 
+* Businesses can also use is for development of strategies as there are many possible outcomes in this game.
 
 ## When:
-* This problem began in February 2021, when COVID Vaccination Drive began and small/medium clinics will soon have to administer vaccinations to people.
+* This game can be played whenever you are feeling bored or want to figure out ways, outcomes and situations of this game.
 
 ## Where:
-* This problem is expected to surface in all states of India.
+* A variety of websites make a simple tic tac toe game available.
+* Also used in businesses and organizations.
+
 
 ## How:
-* This problem may cause ineffective vaccine management and hence there can be a huge amount of vaccine wastage. As per recent data in cities like Noida and Delhi till date 9%-18% vaccines have gone to waste.
+* It can be implemented in a business strategy to help improve it. Business strategy is about moving swiftly and getting an advantageous position. In Tic-Tac-Toe, this is pretty straight forward: The first mover can choose the best position. In business, it is a bit more complicated. Even if business strategy is more complex, the principle is the same: Move swiftly when the time comes, go for an advantageous position.
 
 # Detail requirements
 ## High Level Requirements: 
