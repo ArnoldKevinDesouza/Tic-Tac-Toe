@@ -92,7 +92,7 @@ It can help to improve a person's concentration as well as strategic thinking
 | LR04 | If the user is playing with 'O', he'll get the second turn. | HR02 |
 | LR05 | If the user presses '3', it'll exit the game. | HR03 |
 | LR06 | If the computer gets 3 Xs or 3 Os in vertical,horizontal or diagonal row, User will lose. | HR04 |
-| LR05 | If the user gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win. | HR05 |
-| LR06 | If the total number of moves, i.e., 9 moves have been completed and neithe the user nor the computer has won, it'll end up in a draw. | HR06 |
+| LR07 | If the user gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win. | HR05 |
+| LR08 | If the total number of moves, i.e., 9 moves have been completed and neithe the user nor the computer has won, it'll end up in a draw. | HR06 |
 
 
