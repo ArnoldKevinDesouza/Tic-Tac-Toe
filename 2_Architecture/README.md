@@ -1,13 +1,8 @@
 # Design
 
 ## High Level Design 
-* Architecture Design :
-![Architecture](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/2_Design/hld_1.png)
-* Component Diagram :
-![ComponentDiagram](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/2_Design/COMPONENT.png)
 
-* Usecase Diagram :
-![UsecaseDiagram](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/2_Design/Usecasehdl.jpg)
+![Architecture](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/6_Media/High_Level_design.png?raw=true)
 
 ## Low Level Design 
 
