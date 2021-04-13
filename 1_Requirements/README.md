@@ -76,26 +76,23 @@ It can help to improve a person's concentration as well as strategic thinking
 ## High Level Requirements: 
 | ID | Description | 
 | ----- | ----- | 
-| HR01 | User shall be able to add new patient record |
-| HR02 | User shall be able to read a patient record |
-| HR03 | User shall be able to update a patient record |
-| HR04 | User shall be able to delete a patient record |
-| HR05 | User shall be able to save records in a file |
-| HR06 | User shall be able to read data from a file |
-| HR07 | Data should not be lost in case of faliure |
-| HR08 | Data should always be stored when closing the system |
+| HR01 | User shall be able to choose 'X' to play |
+| HR02 | User shall be able to choose 'O' to play |
+| HR03 | User shall be able to Exit the game |
+| HR04 | User shall lose|
+| HR05 | User shall win|
+| HR06 | User shall end up in a Draw situation|
 ##  Low level Requirements:
  
 | ID | Description | HLR ID |
 | ------ | --------- | ------ |
-| LR01 | New record shall be added by providing all the asked information and the id should be unique or else patient record should not be accepted. | HR01 |
-| LR02 | Reading patient data should be possible in 2 ways, first being by searching by id of a patient and second by printing all the records available | HR02 |
-| LR03 | While reading all the records, only 10 records per page should be visible and should add 10 more if user wants to see more | HR02 |
-| LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR02 |
-| LR05 | User need to search by id for the pateint record to be updated, if no such record is available then "No Record Found" Message should be displayed | HR03 |
-| LR06 | User need to search by id for the pateint record to be deleted, if no such record is available then "No Record Found" Message should be displayed | HR04 |
-| LR05 | User shall be able to save the files, if file already exists then it should append to file and should not overwrite it and if file does not exists then it should create a new file | HR05 |
-| LR06 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR05, HR06, HR07, HR08 |
-| LR07 | When user Log off the system, message shall be prompted asking the user to save new records to file before exiting or not | HR08 |
+| LR01 | If the user presses '1', he'll be play with 'X'. | HR01 |
+| LR02 | If the user is playing with 'X', he'll get the first turn. | HR01 |
+| LR03 | If the user presses '2', he'll be play with 'O'. | HR02 |
+| LR04 | If the user is playing with 'O', he'll get the second turn. | HR02 |
+| LR05 | If the user presses '3', it'll exit the game. | HR03 |
+| LR06 | If the computer gets 3 Xs or 3 Os in vertical,horizontal or diagonal row, User will lose. | HR04 |
+| LR05 | If the user gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win. | HR05 |
+| LR06 | If the total number of moves, i.e., 9 moves have been completed and neithe the user nor the computer has won, it'll end up in a draw. | HR06 |
 
 
