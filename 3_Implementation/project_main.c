@@ -1,7 +1,4 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include <windows.h>
+
 #include "game_operations.h"
 
 int board[10] = {2,2,2,2,2,2,2,2,2,2};
@@ -11,7 +8,7 @@ int player,comp;
 void menu();
 void go(int n);
 void start_game();
-void check_draw();
+
 void draw_board();
 void player_first();
 void put_X_O(char ch,int pos);
@@ -33,6 +30,35 @@ void main()
 }
 
 //removed menu function
+void menu()
+{
+    int choice;
+    system("cls");
+    printf("\n--------MENU--------");
+    printf("\n1 : Play with X");
+    printf("\n2 : Play with O");
+    printf("\n3 : Exit");
+    printf("\nEnter your choice:>");
+    scanf("%d",&choice);
+    turn = 1;
+    switch (choice)
+    {
+    case 1:
+        player = 1;
+        comp = 0;
+        player_first();
+        break;
+    case 2:
+        player = 0;
+        comp = 1;
+        start_game();
+        break;
+    case 3:
+        exit(1);
+    default:
+        menu();
+    }
+}
 
 int make2()
 {
@@ -138,7 +164,7 @@ void player_first()
 {
     int pos;
 
-    check_draw();
+    check_draw( turn);
     draw_board();
     gotoxy(30,18);
     printf("Your Turn :> ");
@@ -190,19 +216,32 @@ void start_game()
         player_first();
 }
 
-void check_draw()
+//deleted check_draw
+
+
+
+void draw_board()
 {
-    if(turn > 9)
+    int j;
+
+    for(j=9; j<17; j++)
     {
-        gotoxy(30,20);
-        //textcolor(128+RED);
-        printf("Game Draw");
-        getch();
-        exit(0);
+        gotoxy(35,j);
+        printf("|       |");
+    }
+    gotoxy(28,11);
+    printf("-----------------------");
+    gotoxy(28,14);
+    printf("-----------------------");
+
+    for(j=1; j<10; j++)
+    {
+        if(board[j] == 3)
+            put_X_O('X',j);
+        else if(board[j] == 5)
+            put_X_O('O',j);
     }
 }
-
-// deleted drar_board
 
 void put_X_O(char ch,int pos)
 {
