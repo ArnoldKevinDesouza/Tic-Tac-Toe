@@ -5,10 +5,13 @@ PROJECT_NAME = TIC-TAC-TOE
 BUILD = build
 
 # All source code files
-SRC = project_main.c
+SRC = project_main.c\
+src/check_draw.c
 
 # All test source files
-TEST_SRC = unity/unity.c\
+TEST_SRC = test/test_game_operations.c\
+src/check_draw.c\
+unity/unity.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
@@ -18,7 +21,7 @@ INC	= -Iinc\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
+
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
@@ -45,7 +48,7 @@ doc:
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
