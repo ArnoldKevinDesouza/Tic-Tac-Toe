@@ -2,6 +2,7 @@
 #include<conio.h>
 #include<stdlib.h>
 #include <windows.h>
+#include "game_operations.h"
 
 int board[10] = {2,2,2,2,2,2,2,2,2,2};
 int turn = 1,flag = 0;
@@ -31,35 +32,7 @@ void main()
 
 }
 
-void menu()
-{
-    int choice;
-    system("cls");
-    printf("\n--------MENU--------");
-    printf("\n1 : Play with X");
-    printf("\n2 : Play with O");
-    printf("\n3 : Exit");
-    printf("\nEnter your choice:>");
-    scanf("%d",&choice);
-    turn = 1;
-    switch (choice)
-    {
-    case 1:
-        player = 1;
-        comp = 0;
-        player_first();
-        break;
-    case 2:
-        player = 0;
-        comp = 1;
-        start_game();
-        break;
-    case 3:
-        exit(1);
-    default:
-        menu();
-    }
-}
+//removed menu function
 
 int make2()
 {
@@ -229,28 +202,7 @@ void check_draw()
     }
 }
 
-void draw_board()
-{
-    int j;
-
-    for(j=9; j<17; j++)
-    {
-        gotoxy(35,j);
-        printf("|       |");
-    }
-    gotoxy(28,11);
-    printf("-----------------------");
-    gotoxy(28,14);
-    printf("-----------------------");
-
-    for(j=1; j<10; j++)
-    {
-        if(board[j] == 3)
-            put_X_O('X',j);
-        else if(board[j] == 5)
-            put_X_O('O',j);
-    }
-}
+// deleted drar_board
 
 void put_X_O(char ch,int pos)
 {
