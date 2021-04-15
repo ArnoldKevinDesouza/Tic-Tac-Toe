@@ -4,7 +4,7 @@
 
 |Test ID | Description | Exp I/P | Exp O/P |
 |--------|-------------|---------|---------|
-|H_01    |  Check if the graph for playing is being drawn or not           |    No input     |      3X3 playing field   |
+|H_01    |  Check if the graph for playing is being drawn or not.           |    No input     |      3X3 graph is drawn   |
 |H_02    |Check if player/computer got 3 of his inputs in vertical, horizontal or diagonal format.             |   'X' or 'O' i/p from the user      |The user/computer won the game.|
 |H_03    | Check for draw.            |   9 inputs from (user+computer)      |     The game is over    |
 
