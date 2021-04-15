@@ -29,14 +29,14 @@ void main()
 
 }
 
-//removed menu function
+
 void menu()
 {
     int choice;
     system("cls");
     printf("\n--------MENU--------");
-    printf("\n1 : Play with X");
-    printf("\n2 : Play with O");
+    printf("\n1 : Play with X (first turn) ");
+    printf("\n2 : Play with O (second turn) ");
     printf("\n3 : Exit");
     printf("\nEnter your choice:>");
     scanf("%d",&choice);
@@ -167,6 +167,8 @@ void player_first()
     check_draw( turn);
     draw_board();
     gotoxy(30,18);
+
+    printf("'1' denotes the top left box, '5' denotes the centre and so on.\n ");
     printf("Your Turn :> ");
     scanf("%d",&pos);
 
