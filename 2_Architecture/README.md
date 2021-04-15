@@ -2,15 +2,23 @@
 
 ## High Level Design 
 
-### Usecase Diagram
+### Behavioral Usecase Diagram
 
 ![Architecture](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/6_Media/usecase%20HL.png?raw=true)
 
 ### Structural Diagram
 
-![Architecture](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/6_Media/structural%20HL.png?raw=true)
+![Architecture]()
 
 ## Low Level Design 
+
+### Behavioral Usecase Diagram
+
+![Architecture](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/6_Media/structural%20HL.png?raw=true)
+
+### Structural Diagram
+
+![Architecture](https://github.com/ArnoldKevinDesouza/Tic-Tac-Toe/blob/main/6_Media/structural%20HL.png?raw=true)
 
 --- TBD Structural and Behavioural Diagram
 ![FeaturesLevelStructuralDiagram](Link to Pic)
