@@ -1,8 +1,16 @@
 # Name of the project
-PROJECT_NAME = TIC-TAC-TOE
+PROJ_NAME = TIC-TAC-TOE
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 # Output directory
-BUILD = build
+BUILD_DIR = build
+
+# All include folders with header files
+INC = -Iinc\
+-Iunity
+
+
+
 
 # All source code files
 SRC = project_main.c\
@@ -13,48 +21,73 @@ TEST_SRC = test/test_game_operations.c\
 src/check_draw.c\
 unity/unity.c
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
-# All include folders with header files
-INC	= -Iinc\
--Iunity\
+
+
+
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
 
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
+PROJECT_OUTPUT = $(PROJECT_NAME)
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
 
-# Default target built
-$(PROJECT_NAME):all
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
 # Run the target even if the matching name exists
-.PHONY: run clean test doc all
+.PHONY : all test coverage run clean doc
 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
+# Project Output name
+all:$(BUILD_DIR)
+	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).exe
-
-# Document the code using Doxygen
-doc:
-	make -C ./documentation
+run: all
+	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
-	./$(TEST_OUTPUT)
+	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:${PROJECT_NAME}
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+# Document the code using Doxygen
+doc:
+	make  -C ./documentation
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+	$(RM) $(call FixPath,$(BUILD_DIR)*.$(EXEC))
+	make clean ./documentation
+	rmdir $(BUILD_DIR) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
-$(BUILD):
-	mkdir build
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
+
+
+debug:
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
+	gdb $(PROJ_NAME).$(EXEC)
+
+valgrind:
+	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
