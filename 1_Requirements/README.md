@@ -30,7 +30,9 @@ It can help to improve a person's concentration as well as strategic thinking
 ## Cost and Features with Time 
 | Time | Feature | Cost |
 | ----- | ----- | ----- |
-| 2     |       | 44 Kb |
+| 1558| Started as a pen and paper game in Roman Emire, earlier it was called tic tac.   | Free (Pen and Paper) |
+| 1952 |In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the University of Cambridge, became one of the first known video games.| $5 |
+| 2000-2021 | After Digitalisation, this game is almost free for everyone on multiple mediums.| Cost-effective |
 
 ## Defining Our System
 

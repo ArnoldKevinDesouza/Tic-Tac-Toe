@@ -7,6 +7,11 @@ Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
 [![C/C++ CI](https://github.com/arc-arnob/LnT_Mini_Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/arc-arnob/LnT_Mini_Project/actions/workflows/c-cpp.yml) | To be added | To be added | To be added
 
+## Contributors 
+
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+`258327` | `Arnold Kevin Desouza`  | Feature A, B etc    | X      | X    |X    |X     
 
 ## Folder Structure
 Folder             | Description
